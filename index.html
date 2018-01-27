@@ -1,1 +1,157 @@
-Hello World
+<!doctype html>
+
+<html lang="en" ng-app="srkunze">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.png">
+
+    <title>Sven R. Kunze</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+    <link href="jqvmap.min.css" rel="stylesheet">
+
+    <style>
+    a {color: #4477b2;}
+    .ok_pulse {
+      display: inline-block;
+      width: 0.5em;
+      height: 0.5em;
+      background: green;
+      animation: pulse 3s infinite;
+      border-radius: 50%;
+      margin-bottom: 3px;
+    }
+    @keyframes pulse {
+      0% {
+          box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.4);
+      }
+      70% {
+          box-shadow: 0 0 0 10px rgba(0, 255, 0, 0);
+      }
+      100% {
+          box-shadow: 0 0 0 0 rgba(0, 255, 0, 0);
+      }
+    }
+
+    .div-with-table { overflow:auto; visibility: hidden; }
+    .div-with-table > table { visibility: visible; }
+    .div-with-table:hover { visibility: visible; }
+
+    .twitter {
+      height: 1.8em;
+    }
+    </style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #2f527b; color: white">
+      <a class="navbar-brand" href="#">Sven R. Kunze</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About me <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ideas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Technology</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Social</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Events</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main">
+
+      <div class="jumbotron" style="color: white; background-color: #4477b2">
+        <div class="container">
+          <h2 class="display-4">Sven R. Kunze</h2>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Projects</h2>
+            <p>
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h2>Ideas</h2>
+            <p style="font-size: smaller">
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Technology</h2>
+            <p>
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h2>Social</h2>
+            <p>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Events</h2>
+            <p>
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h2>Donations</h2>
+            <p>
+            </p>
+          </div>
+        </div>
+      </div> <!-- /container -->
+
+    </main>
+
+    <hr>
+
+    <footer class="container">
+      <span ng-controller="CopyrightController as copyright">&copy; All rights reserved. Sven R. Kunze {{ copyright.year }}</span>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="mousetrap.min.js"></script>
+    <script src="frappe-charts.min.iife.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="angular-resource.min.js"></script>
+    <script src="srkunze.js"></script>
+    <script src="copyright.js"></script>
+
+    <script>
+      Mousetrap.bind('up up down down left right left right b a', function() {
+        jQuery('body').css('background', 'url(sweet_kitten.jpg) no-repeat center center fixed');
+      });
+    </script>
+  </body>
+</html>

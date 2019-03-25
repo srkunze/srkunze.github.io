@@ -85,12 +85,18 @@
             <hr />
             <h2>What I do</h2>
             <ul class="list-group">
-              <li class="list-group-item" style="font-weight: bold">
-                Blockchain Technology
+              <li class="list-group-item font-weight-bold">
+                <span>Artifical Intelligence</span>
                 <ul>
-                  <li>Development</li>
                   <li>Consulting</li>
-                  <li>Review</li>
+                  <li>Integration</li>
+                </ul>
+              </li>
+              <li class="list-group-item">
+                <span>Blockchain Technology</span>
+                <ul>
+                  <li>Consulting</li>
+                  <li>Integration</li>
                 </ul>
               </li>
               <li class="list-group-item">
@@ -165,7 +171,7 @@
     <hr>
 
     <footer class="container">
-      <span ng-controller="CopyrightController as copyright">&copy; All rights reserved. Sven R. Kunze {{ copyright.year }}</span>
+      <span ng-controller="CopyrightController as copyright">&copy; All rights reserved. Sven R. Kunze ({{ copyright.year }}).</span>
     </footer>
 
     <!-- Bootstrap core JavaScript
@@ -179,11 +185,5 @@
     <script src="angular-resource.min.js"></script>
     <script src="srkunze.js"></script>
     <script src="copyright.js"></script>
-
-    <script>
-      Mousetrap.bind('up up down down left right left right b a', function() {
-        jQuery('body').css('background', 'url(sweet_kitten.jpg) no-repeat center center fixed');
-      });
-    </script>
   </body>
 </html>
